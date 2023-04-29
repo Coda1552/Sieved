@@ -1,13 +1,10 @@
 package coda.sieved.common.items;
 
-import coda.sieved.Sieved;
 import coda.sieved.common.gui.SieveInventory;
-import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
@@ -24,8 +21,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.fml.DistExecutor;
 
 public class SieveItem extends Item {
 
@@ -34,12 +29,12 @@ public class SieveItem extends Item {
     }
 
     @Override
-    public void inventoryTick(ItemStack pStack, Level pLevel, Entity pEntity, int pSlotId, boolean pIsSelected) {
-        if (getStackInventory(pStack).isDirty()) {
-            //System.out.println(getStackInventory(pStack).getItem(0));
+    public void inventoryTick(ItemStack stcak, Level pLevel, Entity pEntity, int pSlotId, boolean pIsSelected) {
+        if (getStackInventory(stcak).isDirty()) {
+            //System.out.println(stcak.getTag().getInt("Material"));
         }
 
-        super.inventoryTick(pStack, pLevel, pEntity, pSlotId, pIsSelected);
+        super.inventoryTick(stcak, pLevel, pEntity, pSlotId, pIsSelected);
     }
 
     @Override
