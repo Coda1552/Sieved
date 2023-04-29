@@ -1,0 +1,9 @@
+{
+  "parent": "sieved:item/copper_sieve_handheld_base",
+  "texture_size": [64, 64],
+  "textures": {
+    "1": "sieved:item/copper_sieve_base",
+    "2": "sieved:item/small_coarse_dirt",
+    "particle": "sieved:item/copper_sieve_base"
+  }
+}

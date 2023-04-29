@@ -1,0 +1,8 @@
+{
+	"texture_size": [64, 64],
+	"textures": {
+		"1": "sieved:item/copper_sieve_base",
+		"2": "sieved:item/small_soulsand",
+		"particle": "sieved:item/copper_sieve_base"
+	}
+}

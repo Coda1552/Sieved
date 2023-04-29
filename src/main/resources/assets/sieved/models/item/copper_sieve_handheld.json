@@ -1,0 +1,14 @@
+{
+  "parent": "sieved:item/copper_sieve_handheld_base",
+  "textures": {
+    "layer0": "sieved:item/copper_sieve_base"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "sieved:material": 11
+      },
+      "model": "minecraft:item/apple"
+    }
+  ]
+}
