@@ -4,7 +4,7 @@
   "base": {
     "parent": "sieved:item/copper_sieve_handheld",
     "textures": {
-      "layer0": "sieved:item/copper_sieve_handheld"
+      "layer0": "sieved:item/copper_sieve"
     }
   },
   "perspectives": {
