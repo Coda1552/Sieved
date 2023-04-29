@@ -22,6 +22,7 @@ public class Sieved {
         bus.addListener(this::registerClient);
     }
 
+    // todo - fix item model overrides not working
     private void registerClient(FMLClientSetupEvent event) {
         ItemProperties.register(SievedItems.SIEVE.get(), new ResourceLocation(Sieved.MOD_ID, "material"), (stack, world, player, i) ->  stack.hasTag() ? stack.getTag().getInt("Material") : 0);
     }
